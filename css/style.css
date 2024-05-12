@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+*{
+    margin-top: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+    scroll-behavior: smooth;
+
+}
+
+ .darkmood{
+    background-color: black;
+    color: white;
+ }
+/* .lightMoodNav-box{
+    background-color: white;
+    color: black;
+    border: 1px solid gray ;
+    box-shadow: 0 0 10px  red;
+}
+.darktMoodNav-box{
+    background-color: rgb(43, 57, 69);;
+    color: white;
+}
+.lightMoodpg{
+    background-color:#FAFAFA;
+    color: black;
+}
+.darkMoodpg {
+    background-color:rgb(32, 44, 55);
+    color: white;
+} */
+
+
+.country-card{
+    transition: scale .4s;
+}
+.country-card:hover{
+    scale: 1.1;
+}
+.hide{
+    /* opacity: 0; */
+    display: none;
+}
+
+/*
+ */

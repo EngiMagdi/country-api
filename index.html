@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Countries & Weather API </title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="css/style.css"> 
+    
+</head>
+<body>
+<nav class="flex justify-between py-9 px-32 shadow-xl border border-gray-200 ">
+<h1 class="text-3xl font-black">Where in the world?</h1>
+<button class="text-xl  darkMoodBtn"> <i class="fa-regular fa-moon me-2"></i>Dark mode</button>
+
+</nav>
+
+<!-- country  page-->
+<section class="countriesPage ">
+    <!-- search_filter  -->
+<section class="search_filter  flex justify-between py-9 w-10/12 mx-auto">
+    <div class="w-1/4 p-3   rounded-md px-5 d-flex border-gray-200 "> 
+        <input type="text" class="form-control py-2 " id="search"  placeholder="Search For The Country...."  oninput="search(this.value)" > 
+       <i class="fa-solid fa-magnifying-glass m-2 ms-5 text-xl"></i>
+     </div>
+    
+      <select class=" form-select select P-3" >
+        <option selected> filter by region</option>
+        <option value="all"> All Region</option>
+        <option value="africia">Africia</option>
+        <option value="americas">Americas</option>
+        <option value="asia"> Asia</option>
+        <option value="europe">Europe</option>
+        <option value="oceania">Oceania</option>
+      </select>
+
+    <!-- <input type="" class="form-control" id="filter"  placeholder="filter For The Country...">  -->
+
+
+</section> 
+
+
+<!-- content -->
+<section class=" ">
+    <div class="container py-12 w-11/12 mx-auto ">
+        <div class="countryCountainer row flex grid grid-cols-2 md:grid-cols-4 gap-5 ">
+
+            
+                <div class="country-card  rounded-md px-5 py-9 shadow-lg m-2 ">
+                    <div class="flag"></div>
+                    <h2 class="name"></h2>
+                    <ul>
+                        <li>Population: 40,218,234</li>
+                           <li> Region: Asia</li>
+                           <li> Capital: Kabul</li>
+                    </ul>
+    
+                </div>
+       
+
+
+
+        </div>
+    </div>
+</section>
+</section>
+
+
+
+
+
+
+
+
+
+<!-- details page -->
+<section class="detailsPage">
+    <button class="bg-white py-4 px-7 mt-12 shadow-lg rounded-md ms-9  backBtn "> <i class="fa-solid fa-arrow-left me-4"></i>Back</button>
+
+    <!-- details -->
+    <section>
+        <div class="container py-12 w-11/12 mx-auto">
+     
+            <div class="details grid grid-cols-1  md:grid-cols-2 gap-5 ">
+               
+                    <div class="flagDetails p-9  ">
+                       
+                    </div>
+                    <div class="caption p-9 py-12 ">
+                        <h3 class="countryDetails-name text-2xl font-black py-4 ">Åland Islands </h3>
+    
+                        <div class=" grid grid-cols-2 gap-2">
+                            <ul >
+                                <li class="py-3"><span class='font-black'>Native Name:</span> <span class="countryDetails-nativeName"></span> </li>
+                                <li class="py-3"><span class='font-black'>Population:</span>  <span class="countryDetails-Population"></span></li>
+                                <li class="py-3"><span class='font-black'>Region:</span> Europe</li>
+                                <li class="py-3"><span class='font-black'>Sub Region:</span> Southern Europe</li>
+                                <li class="py-3"><span class='font-black'>Capital:</span>  Tirana</li>
+                                
+                            </ul>
+                            <ul>
+                                <li class="py-3"><span class='font-black'>Top Level Domain:</span> .al</li>
+                                <li class="py-3"><span class='font-black'>Currencies:</span>  Albanian lek</li>
+                                <li class="py-3"><span class='font-black'>Languages:</span>  Albanian</li>
+                            </ul>
+    
+                            
+                        </div>
+
+                        <!-- <div class='borders flex row ' > -->
+                            <span class='font-black'>Border Countries:</span> 
+                            <button  class="bg-white py-3 px-5 shadow-lg rounded-md ms-4  "> </button>
+                            <!-- <button  class="bg-white py-3 px-5  shadow-lg rounded-md   ms-4 "></button>
+                            <button  class="bg-white py-3 px-5  shadow-lg rounded-md    ms-4 "></button>
+                            <button  class="bg-white py-3 px-5 shadow-lg rounded-md ms-4  "></button> -->
+                        
+                    <!-- </div> -->
+                    
+    
+                </div>
+
+                <!-- weather & map -->
+
+                <div class="weather_Map grid grid-cols-1  md:grid-cols-2 gap-5 " ></div>
+                <div class="weather"></div>
+                <div class="map"><img src=" " alt="" width="100%" height="100%"></div>
+            </div>
+        </div>
+    </section>
+</section>
+
+
+
+
+
+
+
+
+<!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+
+    <script src="js/index.js"></script>
+</body>
+</html>
